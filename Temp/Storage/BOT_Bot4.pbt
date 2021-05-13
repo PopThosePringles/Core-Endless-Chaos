@@ -1,13 +1,5 @@
 Entries {
   Key {
-    StringVar: "welcome"
-  }
-  SimpleValue {
-    IntVar: 1
-  }
-}
-Entries {
-  Key {
     StringVar: "total_score"
   }
   SimpleValue {
@@ -20,5 +12,13 @@ Entries {
   }
   SimpleValue {
     IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "welcome"
+  }
+  SimpleValue {
+    IntVar: 1
   }
 }

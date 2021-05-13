@@ -7,6 +7,7 @@ local stat_rows = script:GetCustomProperty("stat_rows"):WaitForObject()
 local row = script:GetCustomProperty("row")
 local player_explosion = script:GetCustomProperty("player_explosion")
 local welcome = script:GetCustomProperty("welcome"):WaitForObject()
+local leaderboards = script:GetCustomProperty("leaderboards"):WaitForObject()
 
 local big_boom = script:GetCustomProperty("big_boom"):WaitForObject()
 local big_boom_progress = script:GetCustomProperty("big_boom_progress"):WaitForObject()
@@ -44,6 +45,27 @@ local colors = {
 	{
 		
 		color = script:GetCustomProperty("color_5"),
+		used = false
+
+	},
+
+	{
+		
+		color = script:GetCustomProperty("color_6"),
+		used = false
+
+	},
+
+	{
+		
+		color = script:GetCustomProperty("color_7"),
+		used = false
+
+	},
+
+	{
+		
+		color = script:GetCustomProperty("color_8"),
 		used = false
 
 	}
@@ -218,6 +240,10 @@ local_player.bindingPressedEvent:Connect(function(o, binding)
 		if(welcome.visibility == Visibility.FORCE_ON) then
 			welcome.visibility = Visibility.FORCE_OFF
 		else
+			if(leaderboards.visibility == Visibility.FORCE_ON) then
+				leaderboards.visibility = Visibility.FORCE_OFF
+			end
+
 			welcome.visibility = Visibility.FORCE_ON
 		end
 	end

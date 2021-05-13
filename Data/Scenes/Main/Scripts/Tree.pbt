@@ -207,6 +207,7 @@ Objects {
   ParentId: 11774279965117338039
   ChildIds: 6485591840232246886
   ChildIds: 3282794933978482327
+  ChildIds: 15823475142009607561
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -221,6 +222,59 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 15823475142009607561
+  Name: "Leaderboards_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6290353329606171186
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:score"
+      NetReference {
+        Key: "6507D2D12EAE6DE9"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:kills"
+      NetReference {
+        Key: "725969DDEF822E35"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13877300594157573536
+    }
   }
 }
 Objects {
@@ -324,6 +378,7 @@ Objects {
   ChildIds: 8765039593534545135
   ChildIds: 16254890061336438242
   ChildIds: 9951062669483003615
+  ChildIds: 907887707571700702
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -337,6 +392,89 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 907887707571700702
+  Name: "Leaderboards_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4018839149844167666
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:score"
+      NetReference {
+        Key: "6507D2D12EAE6DE9"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:kills"
+      NetReference {
+        Key: "725969DDEF822E35"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:score_leaderboards"
+      ObjectReference {
+        SelfId: 7813977161096209679
+      }
+    }
+    Overrides {
+      Name: "cs:kills_leaderboards"
+      ObjectReference {
+        SelfId: 18207368841809418362
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:leaderboards"
+      ObjectReference {
+        SelfId: 9918412584640093001
+      }
+    }
+    Overrides {
+      Name: "cs:weclome"
+      ObjectReference {
+        SelfId: 3263812008584352995
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 11534721534130106739
+    }
   }
 }
 Objects {
@@ -511,6 +649,14 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:color_6"
+      Color {
+        R: 0.0910159498
+        G: 0.122000098
+        A: 1
+      }
+    }
+    Overrides {
       Name: "cs:stat_board"
       ObjectReference {
         SelfId: 12953706372811308547
@@ -556,6 +702,28 @@ Objects {
       Name: "cs:welcome"
       ObjectReference {
         SelfId: 3263812008584352995
+      }
+    }
+    Overrides {
+      Name: "cs:color_7"
+      Color {
+        R: 0.449873209
+        G: 0.194
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:color_8"
+      Color {
+        R: 0.73
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:leaderboards"
+      ObjectReference {
+        SelfId: 9918412584640093001
       }
     }
   }

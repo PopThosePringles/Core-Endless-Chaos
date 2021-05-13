@@ -11,7 +11,7 @@ Entries {
     StringVar: "total_score"
   }
   SimpleValue {
-    IntVar: 0
+    IntVar: 850
   }
 }
 Entries {
@@ -19,6 +19,6 @@ Entries {
     StringVar: "total_kills"
   }
   SimpleValue {
-    IntVar: 0
+    IntVar: 15
   }
 }

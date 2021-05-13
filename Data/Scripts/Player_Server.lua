@@ -22,6 +22,7 @@ Game.playerJoinedEvent:Connect(function(player)
 		if(damage.sourcePlayer and damage.sourcePlayer.id ~= player.id) then
 			damage.sourcePlayer:AddResource("kills", 1)
 			damage.sourcePlayer:AddResource("streak", 1)
+			damage.sourcePlayer:AddResource("total_kills", 1)
 
 			local score = 50
 			local streak = damage.sourcePlayer:GetResource("streak")
@@ -36,6 +37,8 @@ Game.playerJoinedEvent:Connect(function(player)
 				score = 150
 			end
 
+			damage.sourcePlayer:AddResource("total_score", score)
+			
 			if(streak == 5 or streak == 10 or streak == 15 or streak == 20) then
 				YOOTIL.Events.broadcast_to_all_players("player_streak", damage.sourcePlayer.name, streak)
 			end
