@@ -255,9 +255,5 @@ Events.Connect("player_died", function(player)
 	vfx:SetWorldPosition(player:GetWorldPosition())
 end)
 
-Events.Connect("show_welcome", function()
-	welcome.visibility = Visibility.FORCE_ON
-end)
-
 Task.Wait()
 YOOTIL.Events.broadcast_to_server("ready")
