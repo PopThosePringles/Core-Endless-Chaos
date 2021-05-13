@@ -15,7 +15,7 @@ Game.playerJoinedEvent:Connect(function(player)
 
 		player:AddResource("deaths", 1)
 		player:SetResource("streak", 0)
-		player:RemoveResource("score", 50)
+		player:RemoveResource("score", 25)
 
 		YOOTIL.Events.broadcast_to_all_players("player_died", player)
 

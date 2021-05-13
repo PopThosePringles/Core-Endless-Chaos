@@ -8,7 +8,7 @@ Assets {
     ParameterOverrides {
       Overrides {
         Name: "emissive_boost"
-        Float: 2.00308061
+        Float: 4
       }
       Overrides {
         Name: "color"

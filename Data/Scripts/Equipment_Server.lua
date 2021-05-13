@@ -44,7 +44,7 @@ Game.playerJoinedEvent:Connect(function(player)
 	laser:Equip(player)
 
 	laser.targetImpactedEvent:Connect(function(w, d)
-		if(Object.IsValid(d.targetObject) and players[d.targetObject.name]) then
+		if(Object.IsValid(d.targetObject) and players[d.targetObject.name] and player.id ~= d.targetObject.name) then
 			local damage = Damage.New()
 
 			damage.amount = 50
