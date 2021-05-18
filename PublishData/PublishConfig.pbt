@@ -9,9 +9,7 @@ Tags: "Deathmatch"
 Tags: "Scifi"
 Tags: "Multiplayer"
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Endless-Chaos\\Screenshots\\Screenshot0001.png"
-ReleaseNotes: "Added queue again (min 2 players)."
+ReleaseNotes: "Removed queue"
 OwnerId: "93d6eaf2514940a08c5481a4c03c1ee3"
 SerializationVersion: 1
 PublishedState: Public
-IsQueued: true
-MinPlayersToStart: 2
